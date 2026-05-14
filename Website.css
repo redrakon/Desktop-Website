@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    padding: 16px;
+    background-color: White;
+}
+
+h1, h2, h3 {
+    font-family: Merriweather, Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    h1 {
+        font-size: 40px
+    }
+}
+
+div.top-bar {
+    display: flex;
+    justify-content: space-between;
+
+    div.logo {
+        font-family: Merriweather, Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+
+        a{
+            color:black;
+            text-decoration: none;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+
+    }
+
+    div.nav {
+        display: flex;
+        gap: 28px;
+
+        a {
+            color: black;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+
+header, section {
+    margin: 14px auto;
+    width: min(1200px, 100%);
+    background-color: #FFF1EA;
+    padding: min(32px, 15%);
+    border-radius: 16px;
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #E36D75;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.text-container {
+    flex: 0 1 544px;
+}
+
+.text-container p {
+    margin: 12px 0 16px 0;
+    font-size: 20px;
+}
+
+.about-me {
+    padding: 48px min(32px, 15%);
+    background-color: #FFCFB4;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.my-work {
+    background-color: #FFE4D4;
+}
+
+.grid-container {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+  "img-1 img-1 img-2 img-3"
+  "img-1 img-1 img-4 img-5";
+    gap: 16px;
+
+}
+
+.grid-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.grid-container img:hover {
+    scale: 1.05;
+}
+
+.footer {
+    padding-bottom: 24px;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        margin: 0 16px;
+        color: black;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
